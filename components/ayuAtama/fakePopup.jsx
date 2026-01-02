@@ -14,7 +14,7 @@ export default function FakeFemboyPopup() {
 
   if (!open) return null;
 
-  /* CLOSE BUTTON: grow + shake, close after 5 clicks */
+  /* CLOSE BUTTON: grow + shake, close after 2 clicks */
   const handleClose = () => {
     setCloseCount((prev) => {
       const next = prev + 1;
