@@ -7,7 +7,18 @@ export default function Layout({ children }) {
         <NavbarLayout />
       </nav>
 
-      <main className="main">{children}</main>
+      <main className="flex-grow w-full relative z-10">
+         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+            {children}
+         </div>
+      </main>
+      
+      <footer className="border-t border-white/10 bg-black/20 mt-auto">
+        <div className="max-w-7xl mx-auto px-6 py-8 text-center text-gray-500 text-sm">
+           <p>&copy; {new Date().getFullYear()} The Website Project. Open Source.</p>
+        </div>
+      </footer>
+
     </div>
   );
 }
